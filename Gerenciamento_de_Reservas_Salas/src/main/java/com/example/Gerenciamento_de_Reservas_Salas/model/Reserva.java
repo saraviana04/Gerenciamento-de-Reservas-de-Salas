@@ -1,6 +1,6 @@
-package com.example.reserva_salas.model;
 
-import com.example.Gerenciamento_de_Reservas_Salas.model.Usuario;
+package com.example.Gerenciamento_de_Reservas_Salas.model;
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,7 +16,7 @@ public class Reserva {
 
     @ManyToOne
     @JoinColumn(name = "sala_id", nullable = false)
-    private com.example.reserva_salas.model.Sala sala;
+    private Sala sala;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id", nullable = false)

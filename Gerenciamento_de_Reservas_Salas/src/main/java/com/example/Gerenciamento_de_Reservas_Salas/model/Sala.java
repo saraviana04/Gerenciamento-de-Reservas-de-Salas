@@ -1,4 +1,4 @@
-package com.example.reserva_salas.model;
+package com.example.Gerenciamento_de_Reservas_Salas.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
