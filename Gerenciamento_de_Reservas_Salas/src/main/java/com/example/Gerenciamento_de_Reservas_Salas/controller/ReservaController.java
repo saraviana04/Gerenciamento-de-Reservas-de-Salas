@@ -38,7 +38,7 @@ public class ReservaController {
 
     // Atualizar uma reserva
     @PutMapping("/{id}")
-    public ResponseEntity<Reserva> atualizarReserva(@PathVariable Long id, @RequestBody Reserva novaReserva) {
+    public ResponseEntity<Reserva> atualizarReserva(@PathVariable Long id, @Valid @RequestBody Reserva novaReserva) {
         return reservaRepository.findById(id)
                 .map(reserva -> {
                     reserva.setSala(novaReserva.getSala());
